@@ -16,7 +16,7 @@ router.post('/notifications/subscribe', (req, res) => {
 
   const payload = JSON.stringify({
     title: 'Hello from Express',
-    body: 'Send from an Express application',
+    body: 'Sent from Heroku',
   })
 
   webpush.sendNotification(subscription, payload)
